@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devuja Weerakoon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="announcement" role="alert">
+    Click here to get 2 FREE months of Skillshare Premium & watch my Webflow course on building this website from scratch!
+  </div>
+
+  <nav role="navigation">
+    <div class="logo">
+      <img src="images/logo.png" alt="Devuja logo" class="logo-img" />
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="hero-img">
+      <img src="images/devuja-portrait.jpeg" alt="Portrait of Devuja Weerakoon" class="profile-img" />
+    </div>
+    <div class="hero-text">
+      <h1>
+        I'm Devuja Weerakoon.<br />
+        A Software Engineer<br />
+        <span class="gray">based in Sri Lanka.</span>
+      </h1>
+      <p>
+        I’m passionate about web development and AI. I build interactive, responsive, and accessible digital experiences.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience" class="timeline">
+    <h2>My Journey</h2>
+    <div class="timeline-event">
+      <h5>2008-2024</h5>
+      <p>Went to Lyceum International School-Panadura</p>
+    </div>
+    <div class="timeline-event">
+      <h5>2024</h5>
+      <p>Started Software Engineering at IIT.</p>
+    </div>
+  </section>
+  <br>
+  <section id="projects" class="py-4">
+    <h2 class="text-center">Projects</h2>
+    <div class="project-gallery">
+      <img src="images/project1.jpg" alt="Project 1" />
+      <img src="images/project2.jpg" alt="Project 2" />
+    </div>
+  </section>
+
+  <!-- Sub project modals -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- use modal-lg for more width -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Project 1</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="images/project1a.jpg" alt="Project 1 Screenshot 1" class="modal-img" />
+            <img src="images/project1b.jpg" alt="Project 1 Screenshot 2" class="modal-img" />
+          </div>
+          <p class="mt-3">This webpage is an educational site about animals, featuring informative sections on birds, fish, and insects. Each section provides a detailed description of the animal group, accompanied by relevant images—such as an owl for birds and an underwater scene for fish. The page also summarizes the six main types of animals in the Animalia kingdom: mammals, reptiles, amphibians, birds, fish, and insects. At the end, there is a highlight on the Sinharaja Forest, including an embedded Google map and a YouTube video, showcasing it as a rich habitat for animal diversity <br>
+          Features Developed: <br>
+           - HTML for structuring the content with headings, paragraphs, lists, and images.<br>
+           - CSS for styling the page, including setting the background color and arranging images and text.<br>
+           - Image Embedding using the <img> tag to display animal photos.<br>
+           - Hyperlinks with the <a> tag for "click for further details" links.<br>
+           - Google Maps Embed to show the location of the Sinharaja Forest.<br>
+           - YouTube Embed for including a video about the forest.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- use modal-lg for more width -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Project 2</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="images/project2a.jpg" alt="Project 2 Screenshot 1" class="modal-img" />
+            <img src="images/project2b.jpg" alt="Project 2 Screenshot 2" class="modal-img" />
+          </div>
+          <p class="mt-3">This project was developed to raise awareness about Sustainable Development Goal 6 (Clean Water and Sanitation) using a fully responsive, accessible, and user-friendly website. As the editor and developer, I implemented a multi-page site that includes educational content, volunteer engagement, and real-world data representation.<br>
+          Features Developed: <br>
+           - Splash Screen: Designed a visually engaging splash screen with responsive layout and semantic HTML5 structure to introduce users to the project.<br>
+           - Volunteer Page: Built an interactive volunteer section with card-based layout, filtering options, and a registration form for community participation.<br>
+           - Water Access Content Page: Showcased global water scarcity issues using structured text, images, and accessibility-focused layout.<br>
+           - Navigation & Routing: Implemented consistent navigation across all pages with Font Awesome icons and a mobile-friendly hamburger menu.<br>
+           - Editor Page: Added an “Editor” profile page displaying project contribution details with validation results and compliance badges.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Contact Button -->
+<button onclick="openContact()" class="contact-btn">Contact</button>
+
+<!-- Contact Panel -->
+<div id="contactPanel" class="contact-panel">
+  <span class="close-btn" onclick="closeContact()">&times;</span>
+  <h2>Get in Touch</h2>
+  <p><strong>Email:</strong> devuja@gmail.com</p>
+  <p><strong>Phone:</strong> +94 75 777 3112</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/devuja-weerakoon-81450732a/" target="_blank">linkedin.com/in/devuja</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/DevujaSusmini" target="_blank">github.com/devuja</a></p>
+
+  <form action="mail to:devuja@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+  <section id="github" class="container py-4">
+    <h2>GitHub Repositories</h2>
+    <div id="repo-list" aria-live="polite"></div>
+  </section>
+  <br>
+
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Devuja S. Weerakoon</p>
+  </footer>
+  
+  <script src="/Js/script.js"></script>
+</body>
+</html>
